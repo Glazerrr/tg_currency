@@ -2,12 +2,11 @@ import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.utils import executor
-from dotenv import load_dotenv
 from currency import valutes_list
 import os
 from  curparser import mainfunc, dateformat
 # Загрузка переменных из .env
-load_dotenv()
+
 
 # Получение значения токена
 API_TOKEN = os.getenv("TOKEN")
